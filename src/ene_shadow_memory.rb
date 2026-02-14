@@ -27,7 +27,7 @@ DESCRIPTION =
   "models and SU sessions."
 ID          =  File.basename __FILE__, ".rb"
 NAME        = "Eneroth Shadow Memory"
-VERSION     = "1.0.1"
+VERSION     = "1.0.2"
 
 PLUGIN_ROOT = File.expand_path(File.dirname(__FILE__))
 PLUGIN_DIR  = File.join PLUGIN_ROOT, ID

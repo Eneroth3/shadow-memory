@@ -17,7 +17,7 @@ end
 
 def self.restore
 
-    if File.exists? FILE
+    if File.exist? FILE
         shadow_info = Sketchup.active_model.shadow_info
         shadow_settings = JSON.parse File.read(FILE)
         shadow_settings.each { |i| shadow_info[i[0]] = i[1] }
