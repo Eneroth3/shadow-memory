@@ -20,7 +20,9 @@ def self.restore
     if File.exist? FILE
         shadow_info = Sketchup.active_model.shadow_info
         shadow_settings = JSON.parse File.read(FILE)
-        shadow_settings.each { |i| shadow_info[i[0]] = i[1] }
+        shadow_settings.each do |i|
+          shadow_info[i[0]] = i[1] rescue warn("Could not set #{i[0]}. May be read-only.")
+        end
     else
         UI.messagebox "No saved shadows."
     end
