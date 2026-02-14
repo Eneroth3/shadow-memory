@@ -19,15 +19,15 @@ require "sketchup.rb"
 
 module EneShadowMemory
 
-AUTHOR      = "Julia Christina Eneroth"
+AUTHOR      = "Christina Eneroth"
 CONTACT     = "#{AUTHOR} at eneroth3@gmail.com"
-COPYRIGHT   = "#{AUTHOR} #{Time.now.year}"
+COPYRIGHT   = "Copyright 2015-2026 Christina Eneroth"
 DESCRIPTION =
-  "Lets you store shadow settings and retrieve them later. Also works between "\
+  "Store and retrieve shadow settings. Also works between "\
   "models and SU sessions."
 ID          =  File.basename __FILE__, ".rb"
 NAME        = "Eneroth Shadow Memory"
-VERSION     = "1.0.2"
+VERSION     = "1.0.3"
 
 PLUGIN_ROOT = File.expand_path(File.dirname(__FILE__))
 PLUGIN_DIR  = File.join PLUGIN_ROOT, ID
